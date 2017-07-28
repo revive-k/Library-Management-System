@@ -18,7 +18,7 @@ It generally becomes difficult to keep in all the records of books, students, et
                                     (c) create database lms; 
                                     (d) use lms; 
                                     (e) source "path of db.sql file" 
-* Hurrah! You are ready to use! 
+* Hurrah! You are ready to use! Click on LMS.jar file to run. 
 * Report generated will be in your dist folder in LMS directory.
 
 ## Contributors
