@@ -8,20 +8,16 @@ It generally becomes difficult to keep in all the records of books, students, et
 
 ## Pre-requisite
 
-* This application will run smoothly on windows system. 
 * You should have installed MySql and any Java Environment(Jdk).
 
 ## Installation
 
 * First of all, download the zip file and extract it anywhere on your system and put all files inside a folder. 
-* Then you will find another zip file named "LMS". 
-* Extract it also. 
-* Then place the extracted LMS folder in the C Drive(C:) 
 * Open CMD and type these commands- (a) mysql -u root -p 
                                     (b) Enter your password(not a command) 
                                     (c) create database lms; 
                                     (d) use lms; 
-                                    (e) source C:/LMS/db.sql 
+                                    (e) source "path of db.sql file" 
 * Hurrah! You are ready to use! 
 * Report generated will be in your dist folder in LMS directory.
 
