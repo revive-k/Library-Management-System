@@ -167,4 +167,4 @@ public class SearchBook extends JPanel{
         pane = new JScrollPane(table,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         pane.setBounds(120, 115, 900, 280);
     }
-}
+} 

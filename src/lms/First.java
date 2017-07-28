@@ -23,7 +23,7 @@ public class First extends JFrame{
         getContentPane().setBackground(Color.LIGHT_GRAY);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(Toolkit.getDefaultToolkit().getScreenSize()));
-        JLabel background=new JLabel(new ImageIcon("C:\\LMS\\img6.jpg"));
+        JLabel background=new JLabel(new ImageIcon(this.getClass().getResource("images/img6.jpg")));
         background.setBounds(0,0,this.getWidth(), this.getHeight());
         //add items
         add(admin);
@@ -44,7 +44,7 @@ public class First extends JFrame{
     
     public void init(){
         
-        ImageIcon icon = new ImageIcon("C:\\LMS\\user1.png");
+        ImageIcon icon = new ImageIcon(this.getClass().getResource("images/user1.png"));
         Image img = icon.getImage() ;  
         Image newimg = img.getScaledInstance( 160, 160, Image.SCALE_SMOOTH ) ;  
         icon = new ImageIcon( newimg );
@@ -53,7 +53,7 @@ public class First extends JFrame{
         admin.setBackground(Color.GRAY);
         admin.setBounds(460, 320, 149, 162);
         
-        ImageIcon icon1 = new ImageIcon("C:\\LMS\\newuser1.png");
+        ImageIcon icon1 = new ImageIcon(this.getClass().getResource("images/newuser1.png"));
         Image img1 = icon1.getImage() ;  
         Image newimg1 = img1.getScaledInstance( 155, 155, Image.SCALE_SMOOTH ) ;  
         icon1 = new ImageIcon( newimg1 );
@@ -105,6 +105,6 @@ public class First extends JFrame{
     
     public static void main(String[] args){
         First obj = new First();
-        //JOptionPane.showMessageDialog(null, "Please go through the README.txt file before running this application. This application will require some configurations to be made.", "Alert", JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Please go through the README.txt file before running this application. This application will require some configurations to be made.", "Alert", JOptionPane.WARNING_MESSAGE);
     }
 }

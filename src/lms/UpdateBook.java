@@ -236,4 +236,4 @@ public class UpdateBook extends JPanel{
         deletebutton = new JButton("Delete");
         deletebutton.setBounds(575, 358, 89, 23);
     }
-}
+} 

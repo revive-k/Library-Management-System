@@ -156,7 +156,7 @@ public class UpdateStudent extends JPanel{
         });
     }
     
-    public void task(){
+    public void task(){ 
         getid = tsearch.getText();
         try{
             ResultSet rs = DBManager.getResultSet("SELECT * from student_details where st_id = '"+getid+"'");

@@ -247,4 +247,4 @@ public class ReturnBook extends JPanel{
         finebutton = new JButton("Calculate Fine");
         finebutton.setBounds(550, 298, 120, 20);
     }
-}
+} 

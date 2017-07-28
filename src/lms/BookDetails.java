@@ -23,7 +23,7 @@ public class BookDetails extends JFrame{
         getContentPane().setBackground(Color.GRAY);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(Toolkit.getDefaultToolkit().getScreenSize()));
-        JLabel background=new JLabel(new ImageIcon("C:\\LMS\\img6.jpg"));
+        JLabel background=new JLabel(new ImageIcon(this.getClass().getResource("images/img6.jpg")));
         background.setBounds(0,0,this.getWidth(), this.getHeight());
         //add items
         addbook = new AddBook();
@@ -36,7 +36,7 @@ public class BookDetails extends JFrame{
         viewbook.setBackground(Color.LIGHT_GRAY);
         tab.add("View Book",viewbook);
         
-        ImageIcon icon = new ImageIcon("C:\\LMS\\Home-icon.png");
+        ImageIcon icon = new ImageIcon(this.getClass().getResource("images/Home-icon.png"));
         java.awt.Image img = icon.getImage() ;  
         java.awt.Image newimg = img.getScaledInstance( 68, 68,  java.awt.Image.SCALE_SMOOTH ) ;  
         icon = new ImageIcon( newimg );
@@ -45,7 +45,7 @@ public class BookDetails extends JFrame{
         home.setBounds(104, 486, 50, 50);
         add(home);
         
-        ImageIcon icon1 = new ImageIcon("C:\\LMS\\logout1.png");
+        ImageIcon icon1 = new ImageIcon(this.getClass().getResource("images/logout1.png"));
         java.awt.Image log = icon1.getImage() ;  
         newimg = log.getScaledInstance( 45, 45,  java.awt.Image.SCALE_SMOOTH ) ;  
         icon1 = new ImageIcon( newimg );
@@ -78,7 +78,7 @@ public class BookDetails extends JFrame{
     }
    
     public JLabel background(){
-        JLabel panelback=new JLabel(new ImageIcon("C:\\LMS\\img6.jpg"));
+        JLabel panelback=new JLabel(new ImageIcon(this.getClass().getResource("images/img6.jpg")));
         panelback.setBounds(0, 0, 1050, 450);
         return panelback;
     }

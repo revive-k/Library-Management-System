@@ -205,4 +205,4 @@ public class AddStudent extends JPanel{
         button = new JButton("Add");
         button.setBounds(470, 330, 89, 23);
     }
-}
+} 

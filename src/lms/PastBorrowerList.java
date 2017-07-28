@@ -184,4 +184,4 @@ public class PastBorrowerList extends JPanel{
         pane = new JScrollPane(table,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         pane.setBounds(350, 25, 670, 380);
     }
-}
+} 

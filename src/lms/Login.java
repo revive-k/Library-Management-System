@@ -27,7 +27,7 @@ public class Login extends JFrame{
         getContentPane().setBackground(Color.LIGHT_GRAY);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(Toolkit.getDefaultToolkit().getScreenSize()));
-        JLabel background=new JLabel(new ImageIcon("C:\\LMS\\img6.jpg"));
+        JLabel background=new JLabel(new ImageIcon(this.getClass().getResource("images/img6.jpg")));
         background.setBounds(0,0,this.getWidth(), this.getHeight());
         //add items
         add(username);

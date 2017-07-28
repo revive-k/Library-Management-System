@@ -27,11 +27,11 @@ public class Home extends JFrame{
         getContentPane().setBackground(Color.GRAY);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(Toolkit.getDefaultToolkit().getScreenSize()));
-        JLabel background=new JLabel(new ImageIcon("C:\\LMS\\img6.jpg"));
+        JLabel background=new JLabel(new ImageIcon(this.getClass().getResource("images/img6.jpg")));
         background.setBounds(0,0,this.getWidth(), this.getHeight());
         //add items
         p1.add(b1);
-        ImageIcon icon1 = new ImageIcon(new ImageIcon("C:\\LMS\\book3.png").getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_DEFAULT));
+        ImageIcon icon1 = new ImageIcon(new ImageIcon(this.getClass().getResource("images/book3.png")).getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_DEFAULT));
         JLabel book = new JLabel();
         book.setIcon(icon1);
         book.setBounds(30, 25, 120, 120); 
@@ -39,7 +39,7 @@ public class Home extends JFrame{
         p1.add(background());
         
         p2.add(b2);
-        ImageIcon icon2 = new ImageIcon(new ImageIcon("C:\\LMS\\student.png").getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_DEFAULT));
+        ImageIcon icon2 = new ImageIcon(new ImageIcon(this.getClass().getResource("images/student.png")).getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_DEFAULT));
         JLabel student = new JLabel();
         student.setIcon(icon2);
         student.setBounds(35, 25, 120, 120); 
@@ -47,7 +47,7 @@ public class Home extends JFrame{
         p2.add(background());
         
         p3.add(b3);
-        ImageIcon icon3 = new ImageIcon(new ImageIcon("C:\\LMS\\issue.png").getImage().getScaledInstance(120, 120, java.awt.Image.SCALE_DEFAULT));
+        ImageIcon icon3 = new ImageIcon(new ImageIcon(this.getClass().getResource("images/issue.png")).getImage().getScaledInstance(120, 120, java.awt.Image.SCALE_DEFAULT));
         JLabel issue = new JLabel();
         issue.setIcon(icon3);
         issue.setBounds(30, 25, 120, 120); 
@@ -55,7 +55,7 @@ public class Home extends JFrame{
         p3.add(background());
         
         p4.add(b4);
-        ImageIcon icon4 = new ImageIcon(new ImageIcon("C:\\LMS\\report.png").getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_DEFAULT));
+        ImageIcon icon4 = new ImageIcon(new ImageIcon(this.getClass().getResource("images/report.png")).getImage().getScaledInstance(100, 100, java.awt.Image.SCALE_DEFAULT));
         JLabel report = new JLabel();
         report.setIcon(icon4);
         report.setBounds(35, 25, 120, 120); 
@@ -107,7 +107,7 @@ public class Home extends JFrame{
     }
   
     public JLabel background(){
-        JLabel panelback=new JLabel(new ImageIcon("C:\\LMS\\img6.jpg"));
+        JLabel panelback=new JLabel(new ImageIcon(this.getClass().getResource("images/img6.jpg")));
         panelback.setBounds(5, 5, 170, 182);
         return panelback;
     }

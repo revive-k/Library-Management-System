@@ -24,7 +24,7 @@ public class GenerateReport extends JFrame{
         setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(Toolkit.getDefaultToolkit().getScreenSize()));
-        JLabel background=new JLabel(new ImageIcon("C:\\LMS\\img6.jpg"));
+        JLabel background=new JLabel(new ImageIcon(this.getClass().getResource("images/img6.jpg")));
         background.setBounds(0,0,this.getWidth(), this.getHeight());
         
         String list[] = {"Book Details","Student Details","Current Borrow Records","Past Borrow Records","Individual Borrower Record(Current)","Individual Borrower Record(Past)","Particular Book Record(Current)","Particular Book Record(Past)"};
@@ -37,7 +37,7 @@ public class GenerateReport extends JFrame{
         button.setBounds(565,380,150,30);
         add(button);
           
-        ImageIcon icon = new ImageIcon("C:\\LMS\\Home-icon.png");
+        ImageIcon icon = new ImageIcon(this.getClass().getResource("images/Home-icon.png"));
         java.awt.Image img = icon.getImage() ;  
         java.awt.Image newimg = img.getScaledInstance( 68, 68,  java.awt.Image.SCALE_SMOOTH ) ;  
         icon = new ImageIcon( newimg );
@@ -46,7 +46,7 @@ public class GenerateReport extends JFrame{
         home.setBounds(590, 450, 50, 50);
         add(home);
         
-        ImageIcon icon1 = new ImageIcon("C:\\LMS\\logout1.png");
+        ImageIcon icon1 = new ImageIcon(this.getClass().getResource("images/logout1.png"));
         java.awt.Image log = icon1.getImage() ;  
         newimg = log.getScaledInstance( 45, 45,  java.awt.Image.SCALE_SMOOTH ) ;  
         icon1 = new ImageIcon( newimg );
